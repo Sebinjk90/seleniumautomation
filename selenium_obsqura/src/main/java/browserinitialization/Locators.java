@@ -40,7 +40,8 @@ public class Locators extends Base {
 	{
 		//tag#id Tag and id 
 		
-		WebElement msgfield = driver.findElement(By.BycssSelector(input#single-input-field));
+		
+		WebElement msgfield1 = driver.findElement(By.cssSelector("input#single-input-field"));
 		
 		//tag.class  Tag and class
 		
@@ -48,7 +49,7 @@ public class Locators extends Base {
 		
 		//tag[attribute=value]  Tag and attribute value
 		
-		WebElement msgfield = driver.findElement(By.cssSelector("input[id=single-input-field]"));
+		WebElement msgfield2 = driver.findElement(By.cssSelector("input[id=single-input-field]"));
 		
 		//tag.class[attribute=value]  Tag, class and attribute
 		
@@ -60,7 +61,7 @@ public class Locators extends Base {
 	{
 		
 		///html/body/section/div/div/div[2]/div[1]/div/div[2]/form/div[1]/input
-		WebElement msgfield=driver.findElement(By.xpath("/html/body/section/div/div/div[2]/div[1]/div/div[2]/form/div[1]/input"));
+		WebElement msgfield3 = driver.findElement(By.xpath("/html/body/section/div/div/div[2]/div[1]/div/div[2]/form/div[1]/input"));
 		
 	}
 	
@@ -68,7 +69,7 @@ public class Locators extends Base {
 	{
 		////tagname[@attribute='value']
 		
-		WebElement btn1=driver.findElement(By.xpath("//button[@id=button-one]")); 
+		WebElement btn1 = driver.findElement(By.xpath("//button[@id=button-one]")); 
 		// double slash indicates current node
 		
 		
@@ -76,9 +77,9 @@ public class Locators extends Base {
 	
 	public void dynamicXpath()
 	{
-		WebElement msgfield = driver.findElement(By.xpath("//div[contains(@id,'message-one')]"));
+		WebElement msgfield4 = driver.findElement(By.xpath("//div[contains(@id,'message-one')]")); //contains method in dynamic xpath
 		
-		WebElement showmessage = driver.findElement(By.xpath("//button[text()='Show Message']"));
+		WebElement showmessage = driver.findElement(By.xpath("//button[text()='Show Message']")); // text method in dynamic xpath
 	}
 	
 	public static void main(String[] args) {
